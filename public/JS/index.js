@@ -1,15 +1,17 @@
+console.log("Welcome to my portfolio website");
+// variables declarations
 let mobileMenu = document.querySelector(".mobileMenu");
 let nav = document.querySelector(".mobileNav");
 
 let navbar = document.querySelector("#navbar");
 let navLinks = Array.from(document.querySelectorAll(".item a"));
 let navLinksMobile = Array.from(document.querySelectorAll(".mobile_link a"));
+let homeText = document.querySelector("#home div text");
 var width = 0;
-window.addEventListener("resize", function () {
-    width = document.body.clientWidth;
-    console.log("this is the width ", width)
-    return "hello"
-})
+var text = 'A Full Stack Web Developer';
+var speed = 100;
+var i = 0;
+
 // update width function
 function updateWidth() {
     width = document.body.clientWidth;
@@ -96,6 +98,24 @@ if (width <= 753) {
 window.onresize = () => {
     if (document.body.clientWidth > 753) {
         navbar.classList.remove("mobileMenuDisplay");
-        nav.classList.remove("d_block")
+        nav.classList.remove("d_block");
     }
 }
+
+// function for home page text typing effect
+function homeTextEffect() {
+    if (i < text.length) {
+        homeText.innerHTML += text.charAt(i);
+        i++;
+    }
+}
+
+let textEffect = setInterval(homeTextEffect, speed);
+
+// clearing interval
+setTimeout(() => {
+    console.log(i==text.length);
+    if(i===text.length){
+        clearInterval(textEffect);
+    }
+}, 4000);

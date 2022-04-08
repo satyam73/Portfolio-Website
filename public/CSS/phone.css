@@ -18,11 +18,6 @@
         padding: 2rem 1.5rem;
     }
 
-    #aboutImage{
-        height: 11rem !important;
-        /* margin: 1rem; */
-    }
-
     #aboutInfo {
         padding: 3rem 0rem;
     }
@@ -37,7 +32,6 @@
 
     #skills {
         padding: 0rem 0rem;
-        /* margin-right: 5rem; */
     }
 
     #education {
@@ -61,13 +55,8 @@
         margin: 2rem 1rem;
     }
 
-    /* .edu-division {
-         padding-right: 10rem; 
-    } */
-
     #aboutNav {
         display: none;
-        /* margin: 2rem 1rem; */
     }
 
 
@@ -80,7 +69,6 @@
     }
 
     #extra-skills {
-        /* margin: 1rem 0.6rem; */
         padding: 1rem 1rem;
     }
 
@@ -107,12 +95,7 @@
     }
 
     #home {
-        /* display: flex; */
         justify-content: flex-start;
-        /* align-items: center; */
-        /* background: url("../Images/tech_bg.jpg") no-repeat; */
-        /* background-size: cover; */
-        /* background-position: cover; */
 
     }
 
@@ -175,7 +158,6 @@
     }
 
     #homeDiv {
-        /* left: 3rem; */
         background: url("../Images/tech_bg.jpg") no-repeat;
         background-size: cover;
     }
@@ -217,24 +199,28 @@
         display: none;
     }
 
-    #aboutHeading{
+    #aboutHeading {
         margin: 0;
     }
-    #aboutInfo{
+
+    #aboutInfo {
         height: fit-content;
         margin-bottom: 0rem;
         padding-bottom: 1rem;
     }
-    .container2-aboutInfo{
+
+    .container2-aboutInfo {
         height: fit-content;
     }
-    #aboutImage{
+
+    #aboutImage {
         height: 14rem;
     }
-    #about hr{
+
+    #about hr {
         margin-top: 0rem;
     }
- }
+}
 
 @media only screen and (max-width: 460px) {
     html {
@@ -247,8 +233,6 @@
 
     #education {
         margin: 1rem 0rem;
-        /* margin-left: -4rem; */
-        /* margin-right: 0rem; */
         background: none;
         padding: 0rem;
     }
@@ -260,8 +244,8 @@
     }
 
     .skill {
-        width: 12rem;
-        height: 15rem;
+        width: 15rem;
+        height: 16rem;
     }
 
     #skills {
@@ -276,29 +260,28 @@
         background-size: cover;
     }
 
-    #aboutInfo{
+    #aboutInfo {
         flex-direction: column;
         align-items: center;
         justify-content: center;
     }
-    .container1-aboutInfo{
+
+    .container1-aboutInfo {
         height: 22vh;
     }
-    .container2-aboutInfo{
+
+    .container2-aboutInfo {
         width: 90%;
     }
-    #aboutImage{
-        border-radius: 100%;
+
+    .skill .caption {
+        margin-top: 1.4rem;
     }
-    /* #homeDiv {
-        top: 9rem;
-        left: 2rem;
-    } */
 }
 
 @media only screen and (max-width: 436px) {
     html {
-        font-size: 44%;
+        font-size: 48%;
     }
 
     #extra-skills {
@@ -310,16 +293,7 @@
         background-size: cover;
     }
 
-    /* #homeDiv {
-
-         top: 0rem; 
-         align-self: center; 
-         left: 0rem; 
-
-    } */
-
     #home div text {
-        /* width: 96vw; */
         word-break: break-word;
         font-size: 3.4rem;
     }
