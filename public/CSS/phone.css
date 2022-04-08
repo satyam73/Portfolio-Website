@@ -10,8 +10,17 @@
         flex-direction: column;
     }
 
-    #aboutImage {
-        height: 12rem;
+    #contact-box form {
+        width: 80%;
+    }
+
+    #contact-box input {
+        padding: 2rem 1.5rem;
+    }
+
+    #aboutImage{
+        height: 11rem !important;
+        /* margin: 1rem; */
     }
 
     #aboutInfo {
@@ -28,17 +37,23 @@
 
     #skills {
         padding: 0rem 0rem;
-        margin-right: 5rem;
+        /* margin-right: 5rem; */
     }
 
     #education {
         background-position: 95% 100%;
         padding-right: 12rem;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #educationHeading {
+        align-self: flex-start;
     }
 
     .skill {
-        width: 11rem;
-        height: 15rem;
+        width: 15rem;
+        height: 16rem;
     }
 
     .skill-image {
@@ -46,18 +61,33 @@
         margin: 2rem 1rem;
     }
 
-    .edu-division {
-        padding-right: 10rem;
-    }
+    /* .edu-division {
+         padding-right: 10rem; 
+    } */
 
     #aboutNav {
-        margin: 2rem 1rem;
+        display: none;
+        /* margin: 2rem 1rem; */
+    }
+
+
+    #aboutHeading {
+        margin: 0;
+    }
+
+    #moreAbout {
+        width: 90%;
     }
 
     #extra-skills {
-        margin: 1rem 0.6rem;
+        /* margin: 1rem 0.6rem; */
         padding: 1rem 1rem;
     }
+
+    #degree, #intermediate {
+        width: 100%;
+    }
+
 
     #projectcontainer-flex {
         flex-direction: column;
@@ -72,8 +102,28 @@
     }
 
     #homeDiv {
-        top: 9rem;
-        left: 8rem;
+        position: static;
+        padding-left: 3.2rem;
+    }
+
+    #home {
+        /* display: flex; */
+        justify-content: flex-start;
+        /* align-items: center; */
+        /* background: url("../Images/tech_bg.jpg") no-repeat; */
+        /* background-size: cover; */
+        /* background-position: cover; */
+
+    }
+
+    .rectangle {
+        display: none;
+    }
+
+
+    #about-flex {
+        align-items: center;
+        justify-content: center;
     }
 }
 
@@ -82,14 +132,15 @@
     html {
         font-size: 50%;
     }
+
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 844px) {
+/* @media only screen and (min-width: 844px) {
     html {
         font-size: 58%;
     }
-}
+} */
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
@@ -106,9 +157,17 @@
 }
 
 @media only screen and (max-width: 753px) {
+    html {
+        font-size: 54%;
+    }
+
     #contact-box {
         flex-direction: column;
         margin-left: 1rem;
+    }
+
+    #contact-box input {
+        padding: 2rem 1.5rem;
     }
 
     #social-flex {
@@ -116,7 +175,9 @@
     }
 
     #homeDiv {
-        left: 3rem;
+        /* left: 3rem; */
+        background: url("../Images/tech_bg.jpg") no-repeat;
+        background-size: cover;
     }
 
     nav {
@@ -151,9 +212,31 @@
     .mobileMenu .fas {
         line-height: 6.7rem;
     }
-}
 
-@media screen and (max-width: 460px) {
+    .rectangle {
+        display: none;
+    }
+
+    #aboutHeading{
+        margin: 0;
+    }
+    #aboutInfo{
+        height: fit-content;
+        margin-bottom: 0rem;
+        padding-bottom: 1rem;
+    }
+    .container2-aboutInfo{
+        height: fit-content;
+    }
+    #aboutImage{
+        height: 14rem;
+    }
+    #about hr{
+        margin-top: 0rem;
+    }
+ }
+
+@media only screen and (max-width: 460px) {
     html {
         font-size: 50%;
     }
@@ -164,15 +247,16 @@
 
     #education {
         margin: 1rem 0rem;
-        margin-left: -4rem;
-        margin-right: 0rem;
+        /* margin-left: -4rem; */
+        /* margin-right: 0rem; */
         background: none;
         padding: 0rem;
     }
 
     #social-handle {
         margin: 1rem 0rem;
-        width: 40rem;
+        width: 24rem;
+        flex-wrap: wrap;
     }
 
     .skill {
@@ -188,25 +272,59 @@
         padding-right: 5rem;
     }
 
-    #homeDiv {
+    #home {
+        background-size: cover;
+    }
+
+    #aboutInfo{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .container1-aboutInfo{
+        height: 22vh;
+    }
+    .container2-aboutInfo{
+        width: 90%;
+    }
+    #aboutImage{
+        border-radius: 100%;
+    }
+    /* #homeDiv {
         top: 9rem;
         left: 2rem;
-    }
+    } */
 }
 
-@media screen and (max-width: 436px) {
+@media only screen and (max-width: 436px) {
     html {
         font-size: 44%;
     }
 
     #extra-skills {
-        width: 60vw;
+        width: 85vw;
     }
 
-    #homeDiv {
-        top: 9rem;
-        left: 2rem;
+    #home {
+        background-position: bottom;
+        background-size: cover;
+    }
+
+    /* #homeDiv {
+
+         top: 0rem; 
+         align-self: center; 
+         left: 0rem; 
+
+    } */
+
+    #home div text {
+        /* width: 96vw; */
+        word-break: break-word;
+        font-size: 3.4rem;
+    }
+
+    .homeText2 {
+        font-size: 5.6rem;
     }
 }
-
-
