@@ -2,11 +2,13 @@ console.log("Welcome to my portfolio website");
 // variables declarations
 let mobileMenu = document.querySelector(".mobileMenu");
 let nav = document.querySelector(".mobileNav");
-
 let navbar = document.querySelector("#navbar");
 let navLinks = Array.from(document.querySelectorAll(".item a"));
 let navLinksMobile = Array.from(document.querySelectorAll(".mobile_link a"));
 let homeText = document.querySelector("#home div text");
+let input = document.querySelectorAll("#contact .form-group input");
+let message = document.querySelector(".form-group textarea")
+let submitBtn = document.querySelector(".submitBtn");
 var width = 0;
 var text = 'A Full Stack Web Developer';
 var speed = 100;
@@ -23,7 +25,7 @@ if (width <= 753) {
     function display() {
         navbar.classList.toggle("mobileMenuDisplay");
         setTimeout(() => { nav.classList.toggle("d_block"); }, 250)
-        console.log('you clicked mobile menu', width);
+        // console.log('you clicked mobile menu', width);
     }
     mobileMenu.addEventListener("click", display);
 }
@@ -64,7 +66,7 @@ if (width <= 753) {
         navLinksMobile[0].classList.toggle("mobile_active");
         navbar.classList.toggle("mobileMenuDisplay");
         nav.classList.toggle("d_block");
-        console.log('you clicked link1');
+        // console.log('you clicked link1');
 
     }
     navLinksMobile[1].onclick = () => {
@@ -74,7 +76,7 @@ if (width <= 753) {
         navLinksMobile[1].classList.toggle("mobile_active");
         navbar.classList.toggle("mobileMenuDisplay");
         nav.classList.toggle("d_block");
-        console.log('you clicked link2');
+        // console.log('you clicked link2');
     }
     navLinksMobile[2].onclick = () => {
         navLinksMobile[0].classList.remove("mobile_active");
@@ -83,7 +85,7 @@ if (width <= 753) {
         navLinksMobile[2].classList.toggle("mobile_active");
         navbar.classList.toggle("mobileMenuDisplay");
         nav.classList.toggle("d_block");
-        console.log('you clicked link3');
+        // console.log('you clicked link3');
     }
     navLinksMobile[3].onclick = () => {
         for (i = 0; i < 3; i++) {
@@ -92,7 +94,7 @@ if (width <= 753) {
         navLinksMobile[3].classList.toggle("mobile_active");
         navbar.classList.toggle("mobileMenuDisplay");
         nav.classList.toggle("d_block");
-        console.log('you clicked link4');
+        // console.log('you clicked link4');
     }
 }
 window.onresize = () => {
@@ -114,8 +116,20 @@ let textEffect = setInterval(homeTextEffect, speed);
 
 // clearing interval
 setTimeout(() => {
-    console.log(i==text.length);
-    if(i===text.length){
+    // console.log(i==text.length);
+    if (i === text.length) {
         clearInterval(textEffect);
     }
 }, 4000);
+
+
+// submitBtn onclick clear all inputs in form
+submitBtn.addEventListener("click", () => {
+    setTimeout(() => {
+        input.forEach((element) => {
+            element.value = "";
+        })
+        message.value = "";
+    }, 4000)
+
+})

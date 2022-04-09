@@ -27,7 +27,6 @@ app.post("/", (req, res) => {
         phone: req.body.phone,
         message: req.body.message
     }
-console.log(formData);
     // CREATING TRANSPORT
     const createTransporter = async () => {
         const oauth2Client = new OAuth2(
