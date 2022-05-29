@@ -11,6 +11,7 @@ html {
 
 
 /* Navigation Section */
+
 header {
     display: flex;
     justify-content: space-between;
@@ -72,7 +73,6 @@ header {
     0% {
         height: 0rem;
     }
-
     100% {
         height: 100vh;
     }
@@ -93,7 +93,9 @@ header {
     background-color: rgb(255, 200, 1);
 }
 
+
 /* Home Page Section */
+
 #home {
     height: 91vh;
     background: url("../Images/background.jpg") no-repeat scroll bottom right;
@@ -116,7 +118,6 @@ header {
     0% {
         transform: rotate(0deg);
     }
-
     100% {
         transform: rotate(360deg);
     }
@@ -214,7 +215,6 @@ a.ctaBtn {
     margin: 2rem 0rem;
     color: rgb(31, 61, 71);
     justify-content: space-around;
-
 }
 
 .container1-aboutInfo {
@@ -232,8 +232,6 @@ a.ctaBtn {
     box-shadow: inset 0 0px 0 0 rgb(31, 61, 71);
     transition: 0.3s;
 }
-
-
 
 .container2-aboutInfo:hover {
     box-shadow: inset 680px -260px 0 0 rgb(31, 61, 71);
@@ -271,6 +269,7 @@ a.ctaBtn {
 #aboutNav ul a {
     color: rgb(255, 200, 1);
 }
+
 
 /* Skill section */
 
@@ -373,7 +372,9 @@ a.ctaBtn {
     font-size: 1.9rem;
 }
 
+
 /*Education*/
+
 #education {
     display: flex;
     padding: 1rem 1rem;
@@ -396,6 +397,7 @@ a.ctaBtn {
     padding: 1rem 0.5rem;
 }
 
+
 /* Project Section */
 
 #projectHeading {
@@ -412,18 +414,64 @@ a.ctaBtn {
 
 #projectcontainer-flex {
     display: flex;
-    justify-content: space-evenly;
+    /* justify-content: space-evenly; */
+    flex-wrap: wrap;
 }
 
 .projectContainer-item {
-    font-size: 2rem;
-    height: 35vh;
-    border: 2px solid midnightblue;
-    width: 30vw;
-    background-color: antiquewhite;
+    /* font-size: 2rem; */
+    max-height: fit-content;
+    min-height: 42vh;
+    /* height: 42vh; */
+    /* border: 3px solid midnightblue; */
+    width: 45vw;
+    /* background-color: black; */
+    margin: 2rem;
+    position: relative;
 }
 
+.projectDetail {
+    /* border: 3px solid red; */
+    background-color: rgba(0, 0, 0, 0.562);
+    color: rgb(255, 200, 1);
+    position: absolute;
+    top: 0px;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    padding: 2rem 4rem 2rem 4rem;
+}
+
+.projectDetail h2 {
+    font-size: 3.6rem;
+}
+
+.projectDetail ul {
+    font-size: 1.7rem;
+    text-align: left;
+}
+
+.projectDetail .links a {
+    text-decoration: none;
+    color: rgb(31, 61, 71);
+    background-color: rgb(255, 200, 1);
+    padding: 1rem;
+    border-radius: 1rem;
+    font-size: 2rem;
+    margin: 1rem;
+}
+
+.links {
+    margin-top: 2rem;
+}
+
+.displayNone {
+    display: none;
+}
+
+
 /* Contact Section */
+
 #contact {
     background-color: rgb(255, 200, 1);
 }
@@ -455,7 +503,8 @@ a.ctaBtn {
     opacity: 0.6;
 }
 
-#contact-box input, textarea {
+#contact-box input,
+textarea {
     width: 100%;
     padding: 1.5rem;
     border: 0.2rem solid rgb(255, 200, 1);
@@ -530,7 +579,9 @@ a.ctaBtn {
     color: rgb(255, 200, 1);
 }
 
+
 /* Footer  */
+
 footer {
     background-color: rgb(31, 61, 71);
     color: rgb(255, 200, 1);
@@ -542,7 +593,9 @@ footer div {
     text-align: center;
 }
 
+
 /* Utility Classes */
+
 .h1 {
     font-size: 4.5rem;
 }

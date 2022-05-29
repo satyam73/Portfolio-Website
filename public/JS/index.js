@@ -25,7 +25,7 @@ if (width <= 753) {
     function display() {
         navbar.classList.toggle("mobileMenuDisplay");
         setTimeout(() => { nav.classList.toggle("d_block"); }, 250)
-        // console.log('you clicked mobile menu', width);
+            // console.log('you clicked mobile menu', width);
     }
     mobileMenu.addEventListener("click", display);
 }
@@ -132,4 +132,19 @@ submitBtn.addEventListener("click", () => {
         message.value = "";
     }, 4000)
 
+});
+
+let projectContainerItem = Array.from(document.getElementsByClassName("projectContainer-item"));
+let projectImage = Array.from(document.querySelectorAll(".projectContainer-item img"));
+let projectDetail = Array.from(document.querySelectorAll(".projectDetail"));
+projectContainerItem.forEach((project, index) => {
+    project.onmouseover = () => {
+        projectDetail[index].style.display = "block";
+        project.style.cursor = "pointer";
+        // console.log("block");
+    }
+    project.onmouseout = () => {
+        projectDetail[index].style.display = "none";
+        // console.log("none");
+    }
 })

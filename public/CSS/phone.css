@@ -1,138 +1,123 @@
 /* ########################################    Media Queries  ###############################*/
 
+
 /* Extra small devices (phones, 600px and down) */
+
 @media only screen and (max-width: 600px) {
     html {
         font-size: 49%;
     }
-
     #contact-box {
         flex-direction: column;
     }
-
     #contact-box form {
         width: 80%;
     }
-
     #contact-box input {
         padding: 2rem 1.5rem;
     }
-
     #aboutInfo {
         padding: 3rem 0rem;
     }
-
     #social-flex {
         width: fit-content;
     }
-
     #moreAbout {
         margin: 0rem;
     }
-
     #skills {
         padding: 0rem 0rem;
     }
-
     #education {
         background-position: 95% 100%;
         padding-right: 12rem;
         justify-content: center;
         align-items: center;
     }
-
     #educationHeading {
         align-self: flex-start;
     }
-
     .skill {
         width: 15rem;
         height: 16rem;
     }
-
     .skill-image {
         height: 7rem;
         margin: 2rem 1rem;
     }
-
     #aboutNav {
         display: none;
     }
-
-
     #aboutHeading {
         margin: 0;
     }
-
     #moreAbout {
         width: 90%;
     }
-
     #extra-skills {
         padding: 1rem 1rem;
     }
-
-    #degree, #intermediate {
+    #degree,
+    #intermediate {
         width: 100%;
     }
-
-
     #projectcontainer-flex {
         flex-direction: column;
         padding: 0.5rem;
         align-items: center;
         align-content: space-around;
     }
-
     .projectContainer-item {
         margin: 0.5rem;
         width: 80%;
     }
-
     #homeDiv {
         position: static;
         padding-left: 3.2rem;
     }
-
     #home {
         justify-content: flex-start;
-
     }
-
     .rectangle {
         display: none;
     }
-
-
     #about-flex {
         align-items: center;
         justify-content: center;
     }
 }
 
+
 /* Small devices (portrait tablets and large phones, 600px and up) */
+
 @media only screen and (min-width: 600px) {
     html {
         font-size: 50%;
     }
-
 }
 
+
 /* Medium devices (landscape tablets, 768px and up) */
+
+
 /* @media only screen and (min-width: 844px) {
     html {
         font-size: 58%;
     }
 } */
 
+
 /* Large devices (laptops/desktops, 992px and up) */
+
 @media only screen and (min-width: 992px) {
     html {
         font-size: 58%;
     }
 }
 
+
 /* Extra large devices (large laptops and desktops, 1200px and up) */
+
 @media only screen and (min-width: 1200px) {
     html {
         font-size: 72.5%;
@@ -143,25 +128,20 @@
     html {
         font-size: 54%;
     }
-
     #contact-box {
         flex-direction: column;
         margin-left: 1rem;
     }
-
     #contact-box input {
         padding: 2rem 1.5rem;
     }
-
     #social-flex {
         margin-top: 4rem;
     }
-
     #homeDiv {
         background: url("../Images/tech_bg.jpg") no-repeat;
         background-size: cover;
     }
-
     nav {
         display: none;
         position: absolute;
@@ -173,52 +153,50 @@
         height: 100vh;
         animation: mobileNav 1s ease;
     }
-
     nav ul {
         flex-direction: column;
         justify-content: center;
         align-items: center;
     }
-
     #navbar ul li {
         text-align: center;
         width: 100%;
     }
-
     .mobileMenu {
         display: block;
         margin-right: 2rem;
         color: rgb(255, 200, 1);
     }
-
     .mobileMenu .fas {
         line-height: 6.7rem;
     }
-
     .rectangle {
         display: none;
     }
-
     #aboutHeading {
         margin: 0;
     }
-
     #aboutInfo {
         height: fit-content;
         margin-bottom: 0rem;
         padding-bottom: 1rem;
     }
-
     .container2-aboutInfo {
         height: fit-content;
     }
-
     #aboutImage {
         height: 14rem;
     }
-
     #about hr {
         margin-top: 0rem;
+    }
+    #projectcontainer-flex {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .projectContainer-item {
+        width: 86vw;
     }
 }
 
@@ -226,54 +204,43 @@
     html {
         font-size: 50%;
     }
-
     .rectangle {
         display: none;
     }
-
     #education {
         margin: 1rem 0rem;
         background: none;
         padding: 0rem;
     }
-
     #social-handle {
         margin: 1rem 0rem;
         width: 24rem;
         flex-wrap: wrap;
     }
-
     .skill {
         width: 15rem;
         height: 16rem;
     }
-
     #skills {
         margin-right: 0rem;
     }
-
     .edu-division {
         padding-right: 5rem;
     }
-
     #home {
         background-size: cover;
     }
-
     #aboutInfo {
         flex-direction: column;
         align-items: center;
         justify-content: center;
     }
-
     .container1-aboutInfo {
         height: 22vh;
     }
-
     .container2-aboutInfo {
         width: 90%;
     }
-
     .skill .caption {
         margin-top: 1.4rem;
     }
@@ -283,21 +250,17 @@
     html {
         font-size: 48%;
     }
-
     #extra-skills {
         width: 85vw;
     }
-
     #home {
         background-position: bottom;
         background-size: cover;
     }
-
     #home div text {
         word-break: break-word;
         font-size: 3.4rem;
     }
-
     .homeText2 {
         font-size: 5.6rem;
     }

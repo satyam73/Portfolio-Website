@@ -22,13 +22,13 @@ app.get("/", (req, res) => {
 });
 app.post("/", (req, res) => {
     const formData = {
-        name: req.body.name,
-        email: req.body.email,
-        phone: req.body.phone,
-        message: req.body.message
-    }
-    // CREATING TRANSPORT
-    const createTransporter = async () => {
+            name: req.body.name,
+            email: req.body.email,
+            phone: req.body.phone,
+            message: req.body.message
+        }
+        // CREATING TRANSPORT
+    const createTransporter = async() => {
         const oauth2Client = new OAuth2(
             process.env.CLIENT_ID,
             process.env.CLIENT_SECRET,
@@ -66,7 +66,7 @@ app.post("/", (req, res) => {
     };
 
     //emailOptions - who sends what to whom
-    const sendEmail = async (emailOptions) => {
+    const sendEmail = async(emailOptions) => {
         try {
             let emailTransporter = await createTransporter();
             await emailTransporter.sendMail(emailOptions);
@@ -96,4 +96,3 @@ app.listen(port, () => {
     console.log("listening to the port", port);
 
 });
-
